@@ -70,3 +70,12 @@ different types.
 2. MEM/WB.RegisterRd = ID/EX.RegisterRs or  MEM/WB.RegisterRd = ID/EX.RegisterRt
 3. Only if forwarding instruction will write to a register
 4. Only if Rd for that instruction is not $zero
+
+| Mux control   | Source  | Explanation                                                                    | 
+|---------------|---------|--------------------------------------------------------------------------------|
+| ForwardA = 00 | ID/EX   | The first ALU operand comes from the register file.                            |   
+| ForwardA = 10 | EX/MEM  | The first ALU operand is forwarded from the prior.                             |   
+| ForwardA = 01 | MEM/WB  | The first ALU operand is forwarded from data memory or an earlier ALU result.  |   
+| ForwardB = 00 | ID/EX   | The second ALU operand comes from the register file.                           |   
+| ForwardB = 10 | EX/MEM  | The second ALU operand is forwarded from the prior.                            |  
+| ForwardA = 01 | MEM/WB  | The second ALU operand is forwarded from data memory or an earlier ALU result. |   
