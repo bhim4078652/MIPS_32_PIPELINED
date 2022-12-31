@@ -24,7 +24,7 @@ different types.
 1) structural hazard.
 2) data hazard.
 3) control hazard.
-
+jancasjcn
 
 
 
