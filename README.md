@@ -81,3 +81,12 @@ different types.
 | ForwardA = 01 | MEM/WB  | The second ALU operand is forwarded from data memory or an earlier ALU result. |   
 
    ![App Screenshot](https://github.com/bhim4078652/MIPS_32_PIPELINED/blob/main/IMAGE_REQ/p4.jpg)
+
+
+### double data hazrad
+###### add $1,$1,$2
+###### add $1,$1,$3
+###### add $1,$1,$4
+
+-  Both hazards occur – Want to use the most recent
+-  Revise MEM hazard condition – Only fwd if EX hazard condition isn’t true
