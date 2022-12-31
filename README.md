@@ -24,16 +24,16 @@ different types.
 1) structural hazard.
 2) data hazard.
 3) control hazard.
-jancasjcn
 
-
-
-1) structural hazard
+### structural hazard
 - The first hazard is called a structural hazard. It means that the hardware cannot support the combination of instructions that we want to execute in the same clock 
   cycle. 
 - structural hazard When a planned instruction cannot execute in the proper clock cycle because the hardware does not  support the combination  of instructions 
   that are set to execute.
 - Separate instruction and data memory is solution for structural hazard encountered in memory access.
  
-2) data hazard
-- 
+### data hazard
+- Data hazards occur when the pipeline must be stalled because one step must wait  for another  to complete.
+- In a computer pipeline, data hazards arise from the dependence of one  instruction on an earlier one that is still in the pipeline.For example, suppose we have an     add instruction  followed immediately by a subtract instruction that uses the sum ($s0):
+                                                         * add $s0, $t0, $t1
+                                                         * sub $t2, $s0, $t3
