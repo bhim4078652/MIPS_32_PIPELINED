@@ -25,7 +25,6 @@ different types.
 2) data hazard.
 3) control hazard.
 
-
 1) structural hazard
 - The first hazard is called a structural hazard. It means that the hardware cannot support the combination of instructions that we want to execute in the same clock 
   cycle. 
