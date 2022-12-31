@@ -1,11 +1,11 @@
 # MIPS_32_PIPELINED
 
 ## Five stages of MIPS pipelined implementation :
-1) Fetch instruction from memory.
-2) Read registers while decoding the instruction.The regular format of MIPS instructions allows reading and decoding to occur simultaneously.
-3) Execute the operation or calculate an address
-4) Access an operand in data memory.
-5) Write the result into a register.
+1) IF: Instruction fetch
+2) ID: Instruction decode and register file read
+3) EX: Execution or address calculation
+4) MEM: Data memory access
+5) WB: Write back
 
 "Pipelining improves performance by increasing instruction throughput, as opposed to decreasing the execution time of an individual instruction, but instruction 
  throughput is the important metric because real programs execute billions of instructions".
@@ -49,3 +49,8 @@ different types.
 - In this case we cannot avoid stalls using forwarding.
 
      ![App Screenshot](https://github.com/bhim4078652/MIPS_32_PIPELINED/blob/main/IMAGE_REQ/p2.jpg)
+
+### control hazard
+- control hazard Also called branch hazard. When the proper instruction cannot execute in the proper pipeline clock cycle because the instruction that was fetched is     not the one that is needed; that is, the flow of instruction addresses is not what the pipeline expected.
+- decision task in a computer is the branch instruction. Notice that we must begin fetching the instruction following the branch on the very next clock cycle.           Nevertheless, the pipeline cannot possibly know what the next instruction should be, since it only just received the branch instruction from memory, one possible       solution is to stall immediately after we fetch a branch, waiting until the pipeline determines the outcome of the branch and knows what instruction address to         fetch from.
+
