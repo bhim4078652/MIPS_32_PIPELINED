@@ -7,5 +7,5 @@
 4) Access an operand in data memory.
 5) Write the result into a register.
 
-### "Pipelining improves performance by increasing instruction throughput, as opposed to decreasing the execution time of an individual instruction, but instruction 
-###  throughput is the important metric because real programs execute billions of instructions".
+"Pipelining improves performance by increasing instruction throughput, as opposed to decreasing the execution time of an individual instruction, but instruction 
+ throughput is the important metric because real programs execute billions of instructions".
