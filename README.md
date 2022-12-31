@@ -25,8 +25,12 @@ different types.
 2) data hazard.
 3) control hazard.
 
+1) structural hazard
 - The first hazard is called a structural hazard. It means that the hardware cannot support the combination of instructions that we want to execute in the same clock 
-  cycle. structural hazard When a planned instruction cannot execute in the proper clock cycle because the hardware does not  support the combination  of instructions 
-  that are set to execute.Separate instruction and data memory is solution for structural hazard encountered in memory access.
+  cycle. 
+- structural hazard When a planned instruction cannot execute in the proper clock cycle because the hardware does not  support the combination  of instructions 
+  that are set to execute.
+- Separate instruction and data memory is solution for structural hazard encountered in memory access.
  
- - 
+2) data hazard
+- 
