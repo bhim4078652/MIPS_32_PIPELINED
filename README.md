@@ -54,10 +54,10 @@ different types.
 - control hazard Also called branch hazard. When the proper instruction cannot execute in the proper pipeline clock cycle because the instruction that was fetched is     not the one that is needed; that is, the flow of instruction addresses is not what the pipeline expected.
 - decision task in a computer is the branch instruction. Notice that we must begin fetching the instruction following the branch on the very next clock cycle.           Nevertheless, the pipeline cannot possibly know what the next instruction should be, since it only just received the branch instruction from memory, one possible       solution is to stall immediately after we fetch a branch, waiting until the pipeline determines the outcome of the branch and knows what instruction address to         fetch from.
 
-• Longer pipelines can’t determine branch outcome early
+- Longer pipelines can’t determine branch outcome early
         – Stall penalty becomes unacceptable
-• Predict outcome of branch
+- Predict outcome of branch
         – Only stall if prediction is wrong
-• MIPS pipeline
+- MIPS pipeline
         – Can predict branches not taken
         – Fetch instruction after branch, with no delay
