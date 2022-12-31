@@ -61,4 +61,4 @@ different types.
 - MIPS pipeline
     – Can predict branches not taken
     – Fetch instruction after branch, with no delay
-    ![App Screenshot](https://github.com/bhim4078652/MIPS_32_PIPELINED/blob/main/IMAGE_REQ/p3.jpg)
+     ![App Screenshot](https://github.com/bhim4078652/MIPS_32_PIPELINED/blob/main/IMAGE_REQ/p3.jpg)
