@@ -59,5 +59,5 @@ different types.
 - Predict outcome of branch
         – Only stall if prediction is wrong
 - MIPS pipeline
-        – Can predict branches not taken
-        – Fetch instruction after branch, with no delay
+        –  Can predict branches not taken
+        –  Fetch instruction after branch, with no delay
