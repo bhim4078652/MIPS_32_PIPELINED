@@ -35,5 +35,5 @@ different types.
 ### data hazard
 - Data hazards occur when the pipeline must be stalled because one step must wait  for another  to complete.
 - In a computer pipeline, data hazards arise from the dependence of one  instruction on an earlier one that is still in the pipeline.For example, suppose we have an     add instruction  followed immediately by a subtract instruction that uses the sum ($s0):
-####                                                      add $s0, $t0, $t1 
-####                                                      sub $t2, $s0, $t3 
+#####                                                      add $s0, $t0, $t1 
+#####                                                      sub $t2, $s0, $t3 
