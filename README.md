@@ -61,4 +61,15 @@ different types.
 - MIPS pipeline
     – Can predict branches not taken
     – Fetch instruction after branch, with no delay
+    
      ![App Screenshot](https://github.com/bhim4078652/MIPS_32_PIPELINED/blob/main/IMAGE_REQ/p3.jpg)
+
+### design of forwarding unit :
+#### conditions 
+1a. EX/MEM.RegisterRd = ID/EX.RegisterRs
+1b. EX/MEM.RegisterRd = ID/EX.RegisterRt
+1c. MEM/WB.RegisterRd = ID/EX.RegisterRs
+1d. MEM/WB.RegisterRd = ID/EX.RegisterRt
+
+2. Only if forwarding instruction will write to a register
+3. Only if Rd for that instruction is not $zero
