@@ -91,4 +91,14 @@ different types.
 -  Both hazards occur – Want to use the most recent
 -  Revise MEM hazard condition – Only fwd if EX hazard condition isn’t true
 
-      ![App Screenshot](https://github.com/bhim4078652/MIPS_32_PIPELINED/blob/main/IMAGE_REQ/p5.jpg)
+    ![App Screenshot](https://github.com/bhim4078652/MIPS_32_PIPELINED/blob/main/IMAGE_REQ/p5.jpg)
+
+### design of hazard detection unit :
+- Check when instruction using lw is decoded in ID.
+- ID/EX.MemRead and ((ID/EX.RegisterRt = IF/ID.RegisterRs) or (ID/EX.RegisterRt = IF/ID.RegisterRt))
+- If detected, stall and insert bubble.
+
+### final picture of pipelined datapath
+   ![App Screenshot](https://github.com/bhim4078652/MIPS_32_PIPELINED/blob/main/IMAGE_REQ/p6.jpg)
+   
+## Results :
