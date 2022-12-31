@@ -66,10 +66,7 @@ different types.
 
 ### design of forwarding unit :
 #### conditions 
-1a. EX/MEM.RegisterRd = ID/EX.RegisterRs
-1b. EX/MEM.RegisterRd = ID/EX.RegisterRt
-1c. MEM/WB.RegisterRd = ID/EX.RegisterRs
-1d. MEM/WB.RegisterRd = ID/EX.RegisterRt
-
-2. Only if forwarding instruction will write to a register
-3. Only if Rd for that instruction is not $zero
+1. EX/MEM.RegisterRd = ID/EX.RegisterRs or EX/MEM.RegisterRd = ID/EX.RegisterRt
+2. MEM/WB.RegisterRd = ID/EX.RegisterRs or  MEM/WB.RegisterRd = ID/EX.RegisterRt
+3. Only if forwarding instruction will write to a register
+4. Only if Rd for that instruction is not $zero
