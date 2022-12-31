@@ -79,3 +79,5 @@ different types.
 | ForwardB = 00 | ID/EX   | The second ALU operand comes from the register file.                           |   
 | ForwardB = 10 | EX/MEM  | The second ALU operand is forwarded from the prior.                            |  
 | ForwardA = 01 | MEM/WB  | The second ALU operand is forwarded from data memory or an earlier ALU result. |   
+
+   ![App Screenshot](https://github.com/bhim4078652/MIPS_32_PIPELINED/blob/main/IMAGE_REQ/p4.jpg)
