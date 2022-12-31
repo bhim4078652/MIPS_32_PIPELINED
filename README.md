@@ -90,3 +90,5 @@ different types.
 
 -  Both hazards occur – Want to use the most recent
 -  Revise MEM hazard condition – Only fwd if EX hazard condition isn’t true
+
+      ![App Screenshot](https://github.com/bhim4078652/MIPS_32_PIPELINED/blob/main/IMAGE_REQ/p5.jpg)
