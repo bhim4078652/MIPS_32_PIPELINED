@@ -42,5 +42,5 @@ different types.
 - The primary solution is based on the observation that we don’t need to wait for the instruction to complete before trying to resolve the data hazard. For the code     sequence above, as soon as the ALU creates the sum for the add, we can supply it as an input for the subtract. Adding extra hardware to retrieve the missing item       early from the internal resources is called forwarding or bypassing.
 - In this graphical representation of events, forwarding paths are valid only if the destination stage is later in time than the source stage. For example, there         cannot be a valid forwarding path from the output of the memory access stage in the first  instruction to the input of the execution stage of the following, since     that would mean going backward in time.
 
-![App Screenshot](https://github.com/bhim4078652/MIPS_32_PIPELINED/blob/main/IMAGE_REQ/p1.jpg)
+                  ![App Screenshot](https://github.com/bhim4078652/MIPS_32_PIPELINED/blob/main/IMAGE_REQ/p1.jpg)
 
