@@ -101,4 +101,4 @@ different types.
 ### final picture of pipelined datapath
    ![App Screenshot](https://github.com/bhim4078652/MIPS_32_PIPELINED/blob/main/IMAGE_REQ/p6.jpg)
    
-## Results :
+
